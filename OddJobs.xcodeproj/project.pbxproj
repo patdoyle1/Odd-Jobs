@@ -60,6 +60,7 @@
 		F0F8D1051A2E490D00B2513D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		F0F8D1071A2E491A00B2513D /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		F0F8D1091A2E492200B2513D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F0F8D10C1A2E498900B2513D /* OddJobs-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OddJobs-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +117,7 @@
 			children = (
 				F0D7A87D1A2BDABA00F0923B /* AppDelegate.swift */,
 				F0D7A87F1A2BDABA00F0923B /* ViewController.swift */,
+				F0F8D10C1A2E498900B2513D /* OddJobs-Bridging-Header.h */,
 				F0D7A8811A2BDABA00F0923B /* Main.storyboard */,
 				F0D7A8841A2BDABA00F0923B /* Images.xcassets */,
 				F0D7A8861A2BDABA00F0923B /* LaunchScreen.xib */,
@@ -217,6 +219,7 @@
 				TargetAttributes = {
 					F0D7A8771A2BDABA00F0923B = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = LYLL7UT2X2;
 					};
 					F0D7A88C1A2BDABA00F0923B = {
 						CreatedOnToolsVersion = 6.1;
@@ -392,6 +395,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/OddJobs",
@@ -399,6 +405,9 @@
 				INFOPLIST_FILE = OddJobs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "OddJobs/OddJobs-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -406,6 +415,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/OddJobs",
@@ -413,6 +425,8 @@
 				INFOPLIST_FILE = OddJobs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "OddJobs/OddJobs-Bridging-Header.h";
 			};
 			name = Release;
 		};
